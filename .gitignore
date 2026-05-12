@@ -1,0 +1,17 @@
+.env
+.env.local
+.env.production
+.env.development
+*.env
+!.env.example
+__pycache__/
+*.pyc
+node_modules/
+.next/
+venv/
+*.pem
+*.key
+*.p12
+.claude/
+CLAUDE.md
+.DS_Store
