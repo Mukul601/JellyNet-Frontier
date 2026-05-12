@@ -132,6 +132,9 @@ JellyNet integrates with several Solana ecosystem tools:
 - **QVAC (Tether)** — Local-first AI provider integration. QVAC nodes can register as JellyNet suppliers, enabling residential compute sharing. Uses OpenAI-compatible API format.
 - **USDT-SPL (Tether)** — Multi-stablecoin support. Agents pay with either USDC or USDT on Solana via x402. Suppliers choose their preferred payout stablecoin.
 - **Jupiter Swap** — DEX aggregator for stablecoin conversions. Auto-converts between USDC/USDT during settlement and handles SOL→USDC deposits.
+- **SNS (.sol Names)** — Human-readable supplier identities. Marketplace shows `alice.sol` instead of raw wallet addresses. Builds trust for buyers routing API calls through supplier keys.
+- **Ika dWallets** — Bridgeless cross-chain supplier onboarding. Suppliers holding assets on Ethereum, Base, or Bitcoin participate in JellyNet's Solana-settled market without bridging. AI agent spending policies enforced via dWallet programs.
+- **Encrypt (FHE)** — Confidential epoch settlement. Individual supplier earnings and call volumes stay encrypted on-chain while aggregate marketplace stats remain public. Protects supplier economics from competitor analysis.
 
 ## Running Locally
 
