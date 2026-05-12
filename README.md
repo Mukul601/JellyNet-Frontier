@@ -128,6 +128,10 @@ JellyNet integrates with several Solana ecosystem tools:
 - **Zerion CLI** — On-chain wallet analysis for x402 payment verification. Used to check agent wallet balances and verify USDC-SPL transactions.
 - **LPAgent.io** — DeFi analytics API providing LP position data and yield analytics, giving AI agents financial context alongside API access.
 - **QuickNode RPC** — High-performance Solana RPC endpoint for x402 payment verification, epoch settlement, and wallet balance checks. Replaces public RPC for lower latency (~500ms vs ~2s) on payment-critical operations.
+- **Dodo Payments** — Merchant of Record for fiat buyer payments. Usage-based metering tracks API credit consumption. Handles tax compliance across 220+ countries.
+- **QVAC (Tether)** — Local-first AI provider integration. QVAC nodes can register as JellyNet suppliers, enabling residential compute sharing. Uses OpenAI-compatible API format.
+- **USDT-SPL (Tether)** — Multi-stablecoin support. Agents pay with either USDC or USDT on Solana via x402. Suppliers choose their preferred payout stablecoin.
+- **Jupiter Swap** — DEX aggregator for stablecoin conversions. Auto-converts between USDC/USDT during settlement and handles SOL→USDC deposits.
 
 ## Running Locally
 
