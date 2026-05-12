@@ -84,7 +84,8 @@ backend/
 ├── integrations/
 │   ├── torque_mcp.py         # Torque MCP — exposes JellyNet marketplace as MCP tools
 │   ├── zerion_agent.py       # Zerion CLI — on-chain wallet analysis for x402 verification
-│   └── lpagent.py            # LPAgent.io — DeFi analytics context for AI agents
+│   ├── lpagent.py            # LPAgent.io — DeFi analytics context for AI agents
+│   └── quicknode_rpc.py      # QuickNode RPC — high-performance Solana RPC for x402 and settlement
 ├── routes/
 │   ├── proxy.py              # Universal API proxy — routes calls to best available key
 │   └── test.py               # Test endpoint — live API call flow for evaluation
@@ -126,6 +127,7 @@ JellyNet integrates with several Solana ecosystem tools:
 - **Torque MCP** — Exposes JellyNet's marketplace as discoverable MCP tools for AI agents. Agents can list models, check pricing, and make API calls through the MCP interface.
 - **Zerion CLI** — On-chain wallet analysis for x402 payment verification. Used to check agent wallet balances and verify USDC-SPL transactions.
 - **LPAgent.io** — DeFi analytics API providing LP position data and yield analytics, giving AI agents financial context alongside API access.
+- **QuickNode RPC** — High-performance Solana RPC endpoint for x402 payment verification, epoch settlement, and wallet balance checks. Replaces public RPC for lower latency (~500ms vs ~2s) on payment-critical operations.
 
 ## Running Locally
 
